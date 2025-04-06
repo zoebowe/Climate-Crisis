@@ -1,8 +1,10 @@
 
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif; /* Change to Open Sans */
     padding-top: 120px; /* Prevents content from hiding under the fixed header */
+    background-color: #f4f4f4;  /* Soft background for a clean look */
+    color: #333;  /* Dark gray text for contrast */
 }
 
 /* Header portion, including Title and navbar*/
@@ -18,7 +20,8 @@ body {
 
 /* Title section */
 .title {
-    font-size: 28px;
+    font-size: 35px;
+    font-family: 'Playfair Display', serif; /* Change to Playfair Display */
     font-weight: bold;
     padding: 20px;
 }
@@ -27,35 +30,39 @@ body {
 .navbar {
     display: flex;
     justify-content: center;
-    background-color: white;
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
+    background-color: #2e8b57; /* Deep green background */
+    border-top: 2px solid #006400;  /* Dark green border for a polished look */
+    border-bottom: 2px solid #006400;
     padding: 10px 0;
 }
 
 .navbar a {
-    color: black;
+    color: white; /* White text to contrast with the dark green background */
     text-decoration: none;
     padding: 14px 20px;
     text-align: center;
     display: inline-block;
+    font-family: 'Open Sans', sans-serif; /* Ensure Open Sans is used for navbar */
+    transition: transform 0.3s, color 0.3s; /* Add transition for color and transform */
 }
 
 .navbar a:hover {
-    color: #333;
+    color: #ff8c00; /* Orange color on hover for a pop of color */
+    transform: scale(1.1); /* Slight zoom effect on hover */
 }
 
 /* Footer section */
 footer {
-    background-color: white;
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
+    background-color: #2e8b57;  /* Green footer to match the theme */
+    border-top: 2px solid #006400;
+    border-bottom: 2px solid #006400;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px 0;
     box-sizing: border-box;
     width: 100%;
+    color: white; /* White text for footer content */
 }
 
 /* Had issues with social media icons not being centered, used container to fix it */
@@ -93,11 +100,28 @@ footer {
 /* Text styles of footer */
 .footer-left p, .footer-right a {
     margin: 5px 0;
-    color: black;
+    color: white;  /* White text for footer text */
+}
+
+.footer-left p {
+    text-decoration: none;
+    transition: transform 0.3s, color 0.3s; /* Add transition for color and transform */
+}
+
+.footer-left p:hover {
+    color: #ff8c00; /* Orange color on hover */
+    cursor: pointer; /* Show pointer cursor */
+}
+
+.footer-right a:hover {
+    color: #ff8c00; /* Highlight text on hover */
+    cursor: pointer; /* Show pointer cursor */
+    text-decoration: underline;
 }
 
 .footer-right a {
     text-decoration: none;
+    transition: transform 0.3s, color 0.3s; /* Add transition for color and transform */
 }
 
 .footer-right a:hover {
@@ -107,62 +131,121 @@ footer {
 /* Social Media Icon styles */
 .footer-social a {
     margin: 0 15px;
-    color: black;
+    color: white;  /* White social media icons */
     font-size: 30px; 
     transition: transform 0.3s, color 0.3s;
 }
 
 .footer-social a:hover {
     transform: scale(1.1); 
-    color: #0073e6; 
+    color: #ff8c00; /* Orange color on hover for a pop of color */
 }
 
 /* Main section styles */
 
 .main {
-    max-width: 1000px;
-    margin: 40px auto;
-    padding: 30px 30px;
+    display: flex;
+    flex-direction: column; /* Arrange the sections in a column */
+    align-items: center; /* Center the content */
+    justify-content: center; /* Center the content vertically */
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 60px;  /* Add space at the top */
+    margin-bottom: 40px;  /* Add space at the bottom */
+    padding: 20px;
     box-sizing: border-box;
     line-height: 1.6;
     color: #222;
-    background-color: white;
-    border: 2px solid black;
+    background-color: #ffffff;  /* White background for clarity */
+    border: 2px solid #2e8b57;  /* Deep green border for a nature feel */
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0,0,0,0.05);
     overflow: hidden;
+    font-family: 'Open Sans', sans-serif; /* Use Open Sans for the main content */
+    background-image: url('background_image.jpg');  /* Add background image here */
+    background-attachment: fixed;  /* This creates the parallax effect */
+    background-size: cover;  /* Ensure it covers the entire section */
+    background-position: center;
+}
+
+/* If you want to specifically target the unordered list in the main section */
+.main ul {
+    font-size: 18px;
+    margin-left: 20px;
+}
+
+.main ul li {
+    margin-bottom: 10px;
 }
 
 .main h2 {
     margin-bottom: 20px;
+    font-family: 'Playfair Display', serif; /* Use Playfair Display for sub-headings */
+    font-size: 32px; /* Larger heading size for emphasis */
+    color: #2e8b57;  /* Dark green for subheadings */
 }
 
 .first-section {
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Adds space between the image and text in sections */
 }
 
 .drought-img {
-    float: left;
-    width: 50%;
-    max-width: 100%;
-    margin: 0 20px 20px 0;
-    box-sizing: border-box;
+    width: 45%; /* Adjust the width of the image */
+    float: left; /* Float the image to the left */
+    margin-right: 20px; /* Adds space to the right of the image */
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .main p {
-    flex: 1;
+    line-height: 1.8;
     font-size: 18px;
     margin: 0;
 }
 
+h2, p {
+    margin-bottom: 20px; /* Adds space between paragraphs and headings */
+}
+
 .second-section {
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Adds space between the image and text in sections */
 }
 
 .lake-img {
-    float: right;
-    width: 50%;
-    max-width: 100%;
-    margin: 0 0 20px 20px;
-    box-sizing: border-box;
+    width: 45%; /* Adjust the width of the image */
+    float: right; /* Float the image to the right */
+    margin-left: 20px; /* Adds space to the left of the image */
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Additional cleanup to make sure the section behaves well after images are floated */
+.first-section, .second-section {
+    clear: both; /* Clears floats */
+    display: block;
+    margin-bottom: 30px;
+}
+
+/* Fade-in Animation */
+.fade-in {
+    opacity: 0; /* Start with the element invisible */
+    transition: opacity 1s ease-in-out;  /* Smooth fade-in transition */
+}
+
+.fade-in.visible {
+    opacity: 1; /* Fade the element in when it gets the 'visible' class */
+}
+
+/* Smooth Scroll on page load */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Button Hover Effect */
+.cta-button {
+    transition: background-color 0.2s ease;
 }

@@ -7,6 +7,9 @@
     <title>Climate Crisis: California Drought</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/aead0e28fa.js" crossorigin="anonymous"></script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -14,40 +17,51 @@
     <div class="header">
         <div class="title">California Drought Prevention</div>
         <div class="navbar">
-            <a href="#">About Us</a>
-            <a href="#">Recent Events</a>
-            <a href="#">Our Goals</a>
-            <a href="#">Your Contribution</a>
-            <a href="#">Contact Us</a>
-            <a href="#">News and Updates</a>
+            <a href="#" title="Learn more about us">About Us</a>
+            <a href="#" title="Recent drought events in California">Recent Events</a>
+            <a href="#" title="Our goals for drought prevention">Our Goals</a>
+            <a href="#" title="How you can contribute to preventing drought">Your Contribution</a>
+            <a href="#" title="Contact us for more information">Contact Us</a>
+            <a href="#" title="News and updates on drought prevention">News and Updates</a>
         </div>
     </div>
 
     <!-- Main section -->
     <div class="main">
-        <h2>Drought In The Past Decade</h2>
-        <div class="first-section">
-            <img src="ratio16x9_960.webp" class="drought-img">
+        <h2 class="fade-in">Drought In The Past Decade</h2>
+        
+        <div class="first-section fade-in">
+            <img src="ratio16x9_960.webp" class="drought-img" alt="Drought conditions in California">
             <p>
-                For the past decade, California has been suffering a severe case of drought. Images show California's
-                conditions to be that of exceptional drought, the lowest on the scaling. In the past decade, around 102
-                million trees have died due to drought in California. With 2012 to 2016 being one of the lowest points
-                in California history to be impacted by drought. Drought conditions would rise in 2023, however, it would appear that
-                as of 2025, conditions are falling again. Drought is a serious issue as it leads to many problems for the citizens of California
-                as well as the wildlife. California is the world's fifth largest agricultural supplier, meaning many farmers who require water to grow their crops.
-                Farmers have to deal with water shortage, making it more difficult to grow and sell crops. Wildfire's also have a higher chance of 
-                occurring due to dry conditions, with one of these large-scale events being the fires in LA occurring the beginning of January 2025.
+                Over the past decade, California has been suffering from severe drought conditions, often classified as <strong>exceptional drought</strong>—the most extreme level. Between <strong>2012 and 2016</strong>, California faced some of its lowest points in history, with devastating impacts on agriculture, wildlife, and communities. Around <strong>102 million trees</strong> have died due to the drought, significantly affecting the environment and wildlife habitats. This has made recovery difficult for ecosystems and intensified the risk of wildfires. By <strong>2023</strong>, drought conditions worsened again, but by <strong>2025</strong>, the situation has started to improve, offering some relief.
+            </p>
+            <p>
+                California is the world’s fifth-largest agricultural supplier. The drought has made it harder for farmers to grow crops, as many of them rely heavily on water. These conditions have led to increased food prices and economic hardships in agricultural communities. Additionally, dry conditions have contributed to a higher likelihood of wildfires. For instance, one of the most significant fire events occurred in LA in early January 2025.
             </p>
         </div>
-        <h2>Relieving and Preventing Drought</h2>
-        <div class="second-section">
-            <img src="AP_LakeOroville_052321_01.webp" class="lake-img">
-            <p>California has been taking steps to increase water retention and prevent drought conditions from worsening. There have been
-                more investments in infrastructure such as increasing groundwater storage and maximizing stormwater capture. California
-                has also established conservation requirements to businesses around the state. There are also many ways for us as citizens
-                to help prevent drought by practicing water conservation. Many have seen commercials describe taking shorter showers,
-                turning off water when not in use, and making sure to fix water leaks as just a few available options. These are all still true,
-                and can be very helpful to California in the long run.
+
+        <h2 class="fade-in">Relieving and Preventing Drought</h2>
+
+        <div class="second-section fade-in">
+            <img src="AP_LakeOroville_052321_01.webp" class="lake-img" alt="Lake Oroville showing drought impact">
+            <p>
+                California is actively working to mitigate the impact of drought through various initiatives to increase water retention and prevent future droughts. Some of these measures include:
+            </p>
+            <ul>
+                <li><strong>Groundwater storage</strong> expansion to improve water reserves.</li>
+                <li>Maximizing <strong>stormwater capture</strong> to store excess rainwater for dry periods.</li>
+                <li>Implementing <strong>conservation requirements</strong> for businesses to reduce water consumption.</li>
+            </ul>
+            <p>
+                In addition to state-level efforts, individual citizens can also play a significant role in preventing drought by practicing water conservation. Some practical ways to help include:
+            </p>
+            <ul>
+                <li>Taking <strong>shorter showers</strong> to reduce water waste.</li>
+                <li>Turning off water when not in use, such as while brushing teeth or washing dishes.</li>
+                <li>Fixing <strong>water leaks</strong> promptly to prevent wastage.</li>
+            </ul>
+            <p>
+                These simple actions, when adopted by millions of people, can contribute greatly to reducing California’s water usage in the long term.
             </p>
         </div>
     </div>
@@ -61,11 +75,12 @@
                 <p>800.821.4291</p>
             </div>
 
+            <!-- Social Media Section -->
             <div class="footer-social">
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
             </div>
 
             <div class="footer-right">
@@ -76,6 +91,8 @@
         </div>
     </footer>
 
+    <!-- Link the JavaScript file before the closing body tag -->
+    <script src="utils.js"></script>
 </body>
 
 </html>
