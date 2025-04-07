@@ -168,7 +168,6 @@ footer {
     background-position: center;
 }
 
-/* If you want to specifically target the unordered list in the main section */
 .main ul {
     font-size: 18px;
     margin-left: 20px;
@@ -250,6 +249,7 @@ html {
     transition: background-color 0.2s ease;
 }
 
+/* Mobile Design */
 @media (max-width: 600px) {
 
     /* Make the title smaller */
@@ -292,7 +292,7 @@ html {
         color: #006400;  /* Use a darker shade of green (forest green) */
         cursor: pointer;
         padding: 10px;
-        background-color: transparent;  /* Optional: remove background color */
+        background-color: transparent;
         position: relative;
         z-index: 1000;
     }
@@ -326,7 +326,7 @@ html {
         object-fit: cover;  /* Ensure the image covers the container without distortion */
     }
 
-    /* Optional: if the images need to be responsive to screen sizes */
+    /* Images responsive to screen sizes */
     .lake-img, .drought-img {
         max-width: 100%; /* Prevent images from stretching beyond the screen size */
     }
