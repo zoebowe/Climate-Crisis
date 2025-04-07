@@ -72,6 +72,6 @@ To get a local copy of the project up and running:
 
 ## 🛠️ **Deployment**
 This website is deployed on **Netlify** (or **Render**). You can visit the live site by clicking the link below:
-- 🌐 [Live Website Link]([https://your-site-url.com](https://incandescent-croquembouche-9e9f84.netlify.app/))
+- 🌐 [Live Website Link](https://incandescent-croquembouche-9e9f84.netlify.app/)
 
 ---
