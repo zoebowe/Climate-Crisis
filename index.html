@@ -16,13 +16,17 @@
     <!-- Navbar -->
     <div class="header">
         <div class="title">California Drought Prevention</div>
+
+        <!-- Hamburger icon (for mobile view) -->
+        <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+        
         <div class="navbar">
-            <a href="#" title="Learn more about us">About Us</a>
-            <a href="#" title="Recent drought events in California">Recent Events</a>
-            <a href="#" title="Our goals for drought prevention">Our Goals</a>
-            <a href="#" title="How you can contribute to preventing drought">Your Contribution</a>
-            <a href="#" title="Contact us for more information">Contact Us</a>
-            <a href="#" title="News and updates on drought prevention">News and Updates</a>
+            <a href="#" onclick="setActive(this)">About Us</a>
+            <a href="#" onclick="setActive(this)">Recent Events</a>
+            <a href="#" onclick="setActive(this)">Our Goals</a>
+            <a href="#" onclick="setActive(this)">Your Contribution</a>
+            <a href="#" onclick="setActive(this)">Contact Us</a>
+            <a href="#" onclick="setActive(this)">News and Updates</a>
         </div>
     </div>
 

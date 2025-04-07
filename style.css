@@ -249,3 +249,143 @@ html {
 .cta-button {
     transition: background-color 0.2s ease;
 }
+
+@media (max-width: 600px) {
+
+    /* Make the title smaller */
+    .title {
+        font-size: 24px;  /* Smaller font size for mobile */
+        padding: 5px;  /* Reduce padding to make the title more compact */
+        margin: 0;  /* Remove any extra margin */
+    }
+
+    /* Reduce the header size */
+    .header {
+        padding: 0;  /* Reduce padding to make the header more compact */
+        height: auto;  /* Allow header to adjust height dynamically */
+    }
+
+    .main {
+        margin-top: 0;  /* Remove top margin for the main content */
+    }
+
+    .first-section {
+        margin-top: 0;  /* Remove top margin for the first section */
+    }
+
+    .title {
+        margin-top: 0;  /* Remove any extra space above the title */
+    }
+
+    /* Adjust padding if necessary */
+    .header {
+        padding-top: 5px;  /* Adjust header padding */
+    }
+
+    .navbar {
+        display: none;  /* Hide the original navbar */
+    }
+
+    .hamburger {
+        display: block;  /* Ensure the icon is visible */
+        font-size: 30px;  /* Adjust size for visibility */
+        color: #006400;  /* Use a darker shade of green (forest green) */
+        cursor: pointer;
+        padding: 10px;
+        background-color: transparent;  /* Optional: remove background color */
+        position: relative;
+        z-index: 1000;
+    }
+
+    .navbar.open {
+        display: flex;  /* Show the navbar when the hamburger is clicked */
+        flex-direction: column;
+        background-color: #2e8b57;
+        width: 100%;
+    }
+
+    .navbar a {
+        text-decoration: none;  /* Ensure links don't have underlines */
+        color: white;  /* Default text color */
+    }
+
+    /* Remove hover effect on mobile */
+    .navbar a:hover {
+        background-color: transparent;  /* Remove hover effect */
+        color: inherit;  /* Retain original color */
+    }
+
+    /* Change text color on click (active state) */
+    .navbar a.active {
+        color: #ff8c00;  /* Change text color to orange on click */
+    }
+
+    .lake-img, .drought-img {
+        width: 100%;  /* Make the images full width */
+        height: auto;  /* Maintain the aspect ratio */
+        object-fit: cover;  /* Ensure the image covers the container without distortion */
+    }
+
+    /* Optional: if the images need to be responsive to screen sizes */
+    .lake-img, .drought-img {
+        max-width: 100%; /* Prevent images from stretching beyond the screen size */
+    }
+
+    footer {
+        background-color: #2e8b57;
+        color: white;
+        padding: 20px 10px;  /* Adjust padding for mobile */
+        text-align: center;
+    }
+
+    .footer-container {
+        display: flex;
+        flex-direction: column; /* Stack items vertically */
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Footer Left Section */
+    .footer-left {
+        margin-bottom: 15px;
+        font-size: 14px; /* Smaller font size */
+    }
+
+    /* Footer Social Media Section */
+    .footer-social {
+        margin: 10px 0;
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .footer-social a {
+        font-size: 20px;  /* Adjust icon size */
+        color: white;
+        transition: color 0.3s ease; /* Smooth color change */
+    }
+
+    .footer-social a:hover, .footer-social a:active {
+        color: #ff8c00; /* Change icon color on hover or click */
+    }
+
+    /* Footer Right Section */
+    .footer-right a {
+        display: block;
+        margin-bottom: 10px; /* Space between links */
+        color: white;
+        font-size: 14px;  /* Smaller font size */
+        text-decoration: none;
+    }
+
+    .footer-right a:hover, .footer-right a:active {
+        color: #ff8c00; /* Change text color on hover or click */
+    }
+}
+
+/* Hide hamburger icon on desktop */
+@media (min-width: 601px) {
+    .hamburger {
+        display: none;  /* Hide the hamburger icon on desktop */
+    }
+}

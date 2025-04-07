@@ -17,3 +17,20 @@ function checkVisibility() {
 // Initial check on page load and continuous check on scroll
 window.addEventListener('load', checkVisibility);  // On page load
 window.addEventListener('scroll', checkVisibility); // On scroll
+
+// Function to toggle the visibility of the navbar
+function toggleMenu() {
+    const navbar = document.querySelector('.navbar');
+    navbar.classList.toggle('open');  // Toggle the 'open' class to show/hide navbar
+}
+
+// Function to set the active class on the clicked link
+function setActive(link) {
+    // Remove the active class from all links
+    document.querySelectorAll('.navbar a').forEach(item => {
+        item.classList.remove('active');
+    });
+
+    // Add the active class to the clicked link
+    link.classList.add('active');
+}
